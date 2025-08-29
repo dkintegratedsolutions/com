@@ -1,0 +1,142 @@
+/* Base */
+* { box-sizing: border-box; }
+:root{
+  --brand-dark:#0b1d2a;
+  --brand-accent:#ff9800;
+  --bg:#ffffff;
+  --text:#1f2937;
+}
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:var(--bg);
+}
+
+/* Header */
+.site-header{
+  position:fixed; inset:0 0 auto 0; height:90px;
+  display:flex; align-items:center; gap:16px;
+  padding:0 18px; background:var(--brand-dark); color:#fff; z-index:1000;
+}
+.logo{ color:#ffffff; font-weight:600; letter-spacing:.5px; text-decoration:none; font-size:2.2rem; } /* this edits the company name in header */
+
+/*here we start testing our logo*/
+header .logo {
+    height: 100px; /* Adjust size as needed */
+     display: flex;
+    align-items: center; /* vertically centers logo and text */
+    gap: 10px;  
+}
+/*here we stop testing logo*/
+
+.main-nav ul{ display:flex; list-style:none; gap:18px; margin:0; padding:0; }
+.main-nav a{ color:#ffffff; text-decoration:none; font-weight:600;font-size:1.3rem; }
+.main-nav a:hover{ color:#fff; }
+
+.header-buttons{ margin-left:auto; display:flex; gap:10px; align-items:center; }
+.btn{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:8px 12px; border-radius:10px; text-decoration:none; font-weight:600; /* this section controls the buttons in the top right of the header */
+  color:#ffffff; box-shadow:0 2px 10px rgba(0,0,0,.15); font-size:1.1rem;
+}
+.btn.call{ background:var(--brand-accent); }
+.btn.email{ background:#0073e6; }
+.btn.whatsapp{ background:#25d366; }               /* This section is just adding color to the background of the buttons */
+.btn.tiktok{ background:#000; }
+.btn:hover{ transform:translateY(-1px); }
+
+.menu-toggle{ display:none; color:#ffffff; margin-left:8px; }
+
+/* Hero */
+.hero{
+  margin-top:64px;
+  min-height:110vh;
+  display:grid; place-items:center;
+  background:url("bk2.png") center/cover no-repeat; /* Use your 1920x1080+ image */
+  position:relative;
+}
+.hero .overlay{
+  position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55));
+}
+.hero-text{
+  position:relative; text-align:center; color:#fff; padding:0 18px;
+  max-width:1000px;
+}
+.hero-text h1{ font-size:clamp(28px,5vw,52px); margin:0 0 10px; }
+.hero-text p{ opacity:.9; margin:0 0 18px; }
+.btn.cta{ background:var(--brand-accent); }
+
+/* Sections */
+.section{ padding:64px 18px; max-width:1200px; margin:0 auto; }
+.section h2{ font-size:clamp(24px,4vw,36px); text-align:center; margin:0 0 24px; }
+
+/* Services */
+.services{ background:#ffffff; border-radius:24px; }
+.service-grid{
+  display:grid;
+  grid-template-columns: repeat(4, minmax(220px,1fr));
+  gap:16px;
+}
+.service-card{
+  background:#ffffff; padding:22px; border-radius:16px;
+  box-shadow:0 8px 24px rgba(0,0,0,.06);
+  text-align:center; transition:transform .2s ease, box-shadow .2s ease;
+}
+.service-card i{
+  font-size:34px; color:var(--brand-dark); display:block; margin-bottom:10px;
+}
+.service-card h3{ margin:.25rem 0 .35rem; font-size:1.5rem; }
+.service-card p{ margin:0; color:#4b5563; font-size:1rem; }
+.service-card:hover{ transform:translateY(-4px); box-shadow:0 14px 30px rgba(0,0,0,.12); }
+
+
+/* Team */
+.team .team-grid{
+  display:grid;
+  grid-template-columns: repeat(4, minmax(10px,1fr));
+  gap:18px; 
+}
+.team-card{
+  background:#ffffff; border-radius:16px; padding:16px; text-align:center; 
+  box-shadow:0 6px 18px rgba(0, 0, 0, 0.06); text-align:center;font-size:1.5rem;
+}
+.team-card img{
+  width:100%; height:220px; object-fit:cover; border-radius:12px; margin-bottom:12px;
+}
+.team-card.ceo{ border:2px solid var(--brand-accent); transform:scale(1.02); }
+.team p{ color:#000000; margin-top:4px; text-align:center; font-size:1rem; }
+
+/* Quote */
+.quote{
+  text-align:center; background:#0f172a; color:#e5e7eb; border-radius:24px;
+}
+.quote .btn.cta{ margin-top:12px; }
+
+/* Footer */
+.footer{
+  padding:30px 18px; text-align:center; color:#fbfbfc; background:#0b1324; margin-top:40px; font-size:1.1rem;
+}
+.footer .footer-link{ color:#fff; text-decoration:none; }
+.footer .footer-link:hover{ text-decoration:underline; }
+.footer-social{ margin:10px 0 6px; display:flex; gap:14px; justify-content:center; }
+.footer-social a{ color:#e5e7eb; font-size:20px; }
+.footer-social a:hover{ color:#fff; }
+
+/* Responsive */
+@media (max-width: 1024px){
+  .service-grid{ grid-template-columns: repeat(3, minmax(220px,1fr)); }
+  .team .team-grid{ grid-template-columns: repeat(3, minmax(220px,1fr)); }
+}
+@media (max-width: 768px){
+  .main-nav{ display:none; }
+  .menu-toggle{ display:inline-flex; margin-left:6px; }
+  .header-buttons span{ display:none; } /* icon-only on mobile */
+  .service-grid{ grid-template-columns: repeat(2, minmax(200px,1fr)); }
+  .team .team-grid{ grid-template-columns: repeat(2, minmax(200px,1fr)); }
+  .hero{ min-height:86vh; }
+}
+@media (max-width: 480px){
+  .service-grid, .team .team-grid{ grid-template-columns: 1fr; }
+}
