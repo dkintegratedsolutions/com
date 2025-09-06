@@ -32,7 +32,7 @@ body {
   padding: 0 12px;
 }
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-.logo-img { height: 60px; width: auto; transition: all 0.3s ease; }
+.logo-img { height: 20px; width: auto; transition: all 0.3s ease; }
 .site-header.shrink .logo-img { height: 40px; }
 .logo-text { font-size: 1.8rem; font-weight: 600; color: #fff; white-space: nowrap; transition: all 0.3s ease; }
 .site-header.shrink .logo-text { font-size: 1.4rem; }
@@ -156,3 +156,4 @@ body {
   .header-buttons { flex-direction: column; gap: 6px; width: 100%; align-items: stretch; }
   .btn { width: 100%; justify-content: center; }
 }
+
