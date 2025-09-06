@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>D&K Integrated Solutions</title>
 
-  <!-- Font Awesome (icons) -->
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- Site CSS -->
   <link rel="stylesheet" href="styles.css" />
@@ -16,8 +15,10 @@
 
   <!-- Header -->
   <header class="site-header">
-    <a href="#home" class="logo" aria-label="D&K Integrated Solutions">D&K INTEGRATED SOLUTIONS</a>
-     <img src="lo5.webp" alt="Company Logo" class="logo">
+    <a href="#home" class="logo" aria-label="D&K Integrated Solutions">
+      <img src="lo5.webp" alt="Company Logo" class="logo-img">
+      <span class="logo-text">D&K INTEGRATED SOLUTIONS</span>
+    </a>
 
     <nav class="main-nav" aria-label="Main Navigation">
       <ul>
@@ -29,27 +30,17 @@
     </nav>
 
     <div class="header-buttons">
-      <a href="+5926952598" class="btn call" aria-label="Call us">
-        <i class="fa-solid fa-phone"></i><span>Call</span>
-      </a>
-      <a href="mailto:danielsankumar2903@gmail.com" class="btn email" aria-label="Email us">
-        <i class="fa-solid fa-envelope"></i><span>Email</span>
-      </a>
-      <a href="https://wa.me/5926952598" class="btn whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
-      </a>
-      <a href="https://www.tiktok.com/@dkintegratedsolutions?_t=ZM-8z6SDwigBdg&_r=1" class="btn tiktok" target="_blank" rel="noopener" aria-label="TikTok">
-        <i class="fa-brands fa-tiktok"></i><span>TikTok</span>
-      </a>
+      <a href="tel:+5926952598" class="btn call" aria-label="Call us"><i class="fa-solid fa-phone"></i><span>Call</span></a>
+      <a href="mailto:danielsankumar2903@gmail.com" class="btn email" aria-label="Email us"><i class="fa-solid fa-envelope"></i><span>Email</span></a>
+      <a href="https://wa.me/5926952598" class="btn whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+      <a href="https://www.tiktok.com/@dkintegratedsolutions" class="btn tiktok" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i><span>TikTok</span></a>
     </div>
 
-    <!-- Mobile menu toggle (pure CSS target trick) -->
     <a href="#menu" class="menu-toggle"><i class="fa-solid fa-bars"></i></a>
   </header>
 
   <!-- Hero -->
   <section id="home" class="hero" role="img" aria-label="Company services montage">
-    <div class="overlay"></div>
     <div class="hero-text">
       <h1>We provide trusted solutions in Logistics, Trucking, Auto Sales, Landscaping, Engineering, Fitting and Machining.</h1>
       <p>Professional services tailored for your needs. Let’s work together!</p>
@@ -60,51 +51,14 @@
   <!-- Services -->
   <section id="services" class="section services">
     <h2>Our Services</h2>
-   <div class="service-grid">
-
-      <article class="service-card">
-      <!-- <a href="services/Trucking-service.html" class="service-card">-->
-        <i class="fa-solid fa-truck"></i>
-        <h3>Trucking Services</h3>
-        <p>We specialize in transportation and supply chain management, freight handling, distribution solutions, and professional trucking services for local and regional delivery.</p>
-     <!--</a>-->
-    </article>
-
-      <article class="service-card">
-        <i class="fa-solid fa-bolt"></i>
-        <h3>Engineering Services </h3>
-        <p>Through our engineering services, we provide construction support, project design, electrical and civil works, and infrastructure development.</p>
-      </article>
-
-      <article class="service-card">
-        <i class="fa-solid fa-comments"></i>
-        <h3>logistics</h3>
-        <p>With a commitment to quality, safety, and innovation, we ensure every project is executed with excellence to support our clients’ growth and long-term success.</p>
-      </article>
-
-      <article class="service-card">
-        <i class="fa-solid fa-seedling"></i>
-        <h3>landscaping</h3>
-        <p>Our landscape services include design, installation, and maintenance of green spaces, outdoor beautification, and sustainable grounds management.</p>
-      </article>
-
-      <article class="service-card">
-        <i class="fa-solid fa-car"></i>
-        <h3>Auto Sales</h3>
-        <p>Our auto sales division offers quality vehicles, sourcing, and sales support to meet diverse customer needs.</p>
-      </article>
-
-      <article class="service-card">
-        <i class="fa-solid fa-house"></i>
-        <h3>Real Estate</h3>
-        <p>We are a full-service real estate company offering residential, commercial, rental, and investment solutions. With expert guidance and a commitment to integrity and excellence, we help clients achieve their property goals with confidence.</p>
-      </article>
-
-      <article class="service-card">
-        <i class="fa-solid fa-tools"></i>
-        <h3>Fitting and Machining Workshop</h3>
-        <p>We provide reliable fitter, machining, and welding services to keep your projects moving with precision and strength. From custom fabrication and machine work to high-quality welding and repairs, our team delivers durable solutions tailored to your needs.</p>
-      </article>
+    <div class="service-grid">
+      <article class="service-card"><i class="fa-solid fa-truck"></i><h3>Trucking Services</h3><p>Transportation and supply chain management, freight handling, distribution solutions, and professional trucking services for local and regional delivery.</p></article>
+      <article class="service-card"><i class="fa-solid fa-bolt"></i><h3>Engineering Services</h3><p>Construction support, project design, electrical and civil works, and infrastructure development.</p></article>
+      <article class="service-card"><i class="fa-solid fa-comments"></i><h3>Logistics</h3><p>Ensuring quality, safety, and innovation for every project to support clients’ growth and long-term success.</p></article>
+      <article class="service-card"><i class="fa-solid fa-seedling"></i><h3>Landscaping</h3><p>Design, installation, and maintenance of green spaces, outdoor beautification, and sustainable grounds management.</p></article>
+      <article class="service-card"><i class="fa-solid fa-car"></i><h3>Auto Sales</h3><p>Quality vehicles, sourcing, and sales support to meet diverse customer needs.</p></article>
+      <article class="service-card"><i class="fa-solid fa-house"></i><h3>Real Estate</h3><p>Residential, commercial, rental, and investment solutions with expert guidance and integrity.</p></article>
+      <article class="service-card"><i class="fa-solid fa-tools"></i><h3>Fitting & Machining Workshop</h3><p>Reliable machining, welding, and fabrication services tailored to your project needs.</p></article>
     </div>
   </section>
 
@@ -112,21 +66,9 @@
   <section id="team" class="section team">
     <h2>Meet Our Team</h2>
     <p>Experienced professionals ready to deliver.</p>
-
     <div class="team-grid">
-
-      <div class="team-card ceo">
-        <img src="images/ceo.jpg" alt="CEO portrait">
-        <h3>Daniel Sankumar</h3>
-        <p>Managing Director</p>
-      </div>
-
-      <div class="team-card">
-        <img src="images/staff1.jpg" alt="Electrical Engineer portrait">
-        <h3>Balram Govindasami</h3>
-        <p>Finance Manager</p>
-      </div>
-
+      <div class="team-card ceo"><img src="images/ceo.jpg" alt="CEO portrait"><h3>Daniel Sankumar</h3><p>Managing Director</p></div>
+      <div class="team-card"><img src="images/staff1.jpg" alt="Electrical Engineer portrait"><h3>Balram Govindasami</h3><p>Finance Manager</p></div>
     </div>
   </section>
 
@@ -134,9 +76,7 @@
   <section id="quote" class="section quote">
     <h2>Request a Free Quote</h2>
     <p>Fill in your details and we’ll get back to you shortly.</p>
-    <a class="btn cta" href="mailto:danielsankumar2903@gmail.com">
-      <i class="fa-solid fa-envelope-open-text"></i> Email Your Request
-    </a>
+    <a class="btn cta" href="mailto:danielsankumar2903@gmail.com"><i class="fa-solid fa-envelope-open-text"></i> Email Your Request</a>
   </section>
 
   <!-- Footer -->
@@ -144,20 +84,69 @@
     <div>
       <strong>D&K INTEGRATED SOLUTIONS</strong><br/>
       Email: <a class="footer-link" href="mailto:danielsankumar2903@gmail.com">danielsankumar2903@gmail.com</a> •
-      Phone: <a class="footer-link" href="tel:+592 6952598">+592 6952598</a>
+      Phone: <a class="footer-link" href="tel:+5926952598">+592 6952598</a>
     </div>
     <div class="footer-social">
-      <a href="https://wa.me/5926952598" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-       <a href="https://www.tiktok.com/@dkintegratedsolutions?_t=ZM-8z6SDwigBdg&_r=1" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-      <a href="mailto:danielsankumar2903@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-      <a href="tel:+592 6952598" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+      <a href="https://wa.me/5926952598" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.tiktok.com/@dkintegratedsolutions" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="mailto:danielsankumar2903@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="tel:+5926952598"><i class="fa-solid fa-phone"></i></a>
     </div>
     <p>© <span id="year"></span> D&K Integrated Solutions. All rights reserved.</p>
   </footer>
 
   <script>
-    // current year
+    // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const header = document.querySelector('.site-header');
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    // Mobile menu toggle
+    toggle.addEventListener('click', () => { nav.classList.toggle('active'); });
+
+    // Smooth scrolling with offset for fixed header
+    const scrollOffset = () => header.offsetHeight + 10;
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          window.scrollTo({
+            top: targetElement.offsetTop - scrollOffset(),
+            behavior: 'smooth'
+          });
+          // close mobile menu
+          if (nav.classList.contains('active')) nav.classList.remove('active');
+        }
+      });
+    });
+
+    // Shrink header on scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) header.classList.add('shrink');
+      else header.classList.remove('shrink');
+    });
+    
+  // Animate cards on scroll
+  const observerOptions = { threshold: 0.1 };
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); // animate once
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.service-card, .team-card').forEach(card => {
+    observer.observe(card);
+  });
+
   </script>
 </body>
 </html>
+
+
